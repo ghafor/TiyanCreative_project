@@ -1,0 +1,696 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* RESET CSS BEGIN */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+
+body {
+    overflow-x: hidden !important;
+}
+.container {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  overflow-x: hidden;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*RESET CSS END*/
+
+
+/* HELPER CLASSES BEGIN */
+.mycontainer {
+    max-width: 100%;
+    width: 823px;
+    height: auto;
+    margin:0 auto;
+    border-left:1px solid lightgray;
+    border-right: 1px solid lightgray;
+
+}
+.align-left {
+    float: left;
+}
+
+.align-right {
+    float: right;
+}
+
+.border {
+    border:1px solid red;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+p,
+ul li,
+ol li {
+    font-size: 17px;
+    line-height: 24px;
+}
+
+/*HELPER CLASSES END*/
+
+
+/* GENERAL RULES*/
+* {
+   box-sizing: border-box; 
+   font-family: "Maven Pro Regular",sans-serif;
+}
+
+/*Tiyan creative starts*/
+#mynavbar ul li a {
+    font-size: 11px;
+    color:white;
+    font-family: "Maven Pro Regular";
+
+}
+#mynavbar ul li a:hover {
+    background-color: rgba(205,205,205,1);
+    color:black;
+  
+}
+#mynavbar ul li a:active {
+    background-color: rgba(205,205,205,1);
+    color:black;
+}
+
+.tiyan-title {
+    font-family: "Maven Pro Regular";
+    font-size: 33px !important;
+    color: white !important;
+}
+/*slidebar starts here*/
+
+
+#slidebar {
+
+    width:100%;
+    min-height: 500px;
+}
+
+.slide-img {
+  width: 100%;
+  padding-left: 3%;
+}
+.top-row {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+    top: -15px;
+    position: relative;
+
+}
+/*overlay setting*/
+
+
+.gallery-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  display: block;
+  -webkit-transition: all 50ms ease-in-out;
+  -moz-transition: all 50ms ease-in-out;
+  -ms-transition: all 50ms ease-in-out;
+  -o-transition: all 50ms ease-in-out;
+  transition: all 50ms ease-in-out;
+}
+.overlay a{
+
+  text-decoration: none !important;
+}
+.overlay {
+  visibility: hidden;
+}
+
+.hexagon:hover .overlay {
+  visibility: visible;
+}
+.gallery-item .overlay a {
+  color: #2a2a2a;
+  width: 32px;
+  height: 32px;
+  background-color: #d3b850;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -16px;
+  margin-left: -16px;
+}
+/*end of overlay setting*/
+.dots {
+  width: 98%;
+  height: 15px;
+  margin:0 auto;
+  border-bottom: 1px solid lightgray;
+  position: relative;
+  bottom: 10px;
+}
+.mylist {
+  position: absolute;
+  left: 10px;
+  display: inline-block;
+}
+.mylist .mylist1 {
+  width: 10px;
+  height: 10px;
+  border:1px solid lightgray;
+  background: lightgray;
+  float: left;
+  margin-left: 10px;
+}
+.mylist1:nth-child(1) {
+  background: black;
+}
+
+.top-row1,.top-row2 {
+    width: 40%;
+    height: 0px;
+    border-bottom: 1px solid lightgray;
+}
+
+
+
+
+
+/*default setting of the hexagon part starts*/
+
+
+
+
+
+.hex  { width: 20%; float: left; }
+.hex-offset { margin-left: 10%; }
+.hexagon2, .hexagonteam {
+  position: absolute;
+  width: 200px;
+  height: 400px;
+  top: -85px;
+}
+.hexagonteam {
+
+  position: absolute;
+  width: 200px;
+  height: 350px;
+  top: -85px;
+}
+.hexagon {
+  overflow: hidden;
+  visibility: hidden;
+
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  transform: rotate(120deg);
+  cursor: pointer;
+}
+
+.hexagon-in1 {
+
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+}
+
+.hexagon-in2 {
+  /*-webkit-box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);
+  box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);*/
+
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  -webkit-background-size: 125%;
+  -moz-background-size: 125%;
+  background-size: 125%;
+  visibility: visible;
+
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.hexagon-in2:hover {
+  webkit-box-shadow: inset 0px 100px 100px 100px rgba(36,36,36, 0.7);
+  box-shadow: inset 0px 100px 100px 100px rgba(36,36,36, 0.7);
+}
+
+
+
+
+.hexagon-a {
+  margin-top: 63px;
+  position: absolute;
+  z-index: 300;
+  margin-left: -65px;
+}
+.hexagon-a a {
+  margin: 0 auto;
+  width: 26%;
+  display: block;
+  position: relative;
+  
+}
+.hexagon-a a.hlinktop:hover .hexa-a {
+  background: #cfb652;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+/***********************************************/
+/*default setting of the hexagon part starts*/
+
+.hexagona {
+
+  position: relative;
+  width: 180px; 
+  height: 103.92px;
+  margin: 51.96px 0;
+  background-image: url("../img/aboutme.png");
+  background-size: auto 207.8461px;
+  background-position: center;
+}
+
+.hexTopa,
+.hexBottoma {
+
+  position: absolute;
+  z-index: 1;
+  width: 127.28px;
+  height: 127.28px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background: inherit;
+  left: 26.36px;
+}
+
+/*counter transform the bg image on the caps*/
+.hexTopa:after,
+.hexBottoma:after {
+
+  content: "";
+  position: absolute;
+  width: 180.0000px;
+  height: 103.92304845413264px;
+  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-51.9615px);
+  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-51.9615px);
+  transform:          rotate(45deg) scaleY(1.7321) translateY(-51.9615px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: inherit;
+}
+
+.hexTopa {
+  top: -63.6396px;
+}
+
+.hexTopa:after {
+  background-position: center top;
+}
+
+.hexBottoma {
+  bottom: -63.6396px;
+}
+
+.hexBottoma:after {
+  background-position: center bottom;
+
+}
+
+.hexagona:after {
+  content: "";
+  position: absolute;
+  top: 0.0000px;
+  left: 0;
+  width: 180.0000px;
+  height: 103.9230px;
+  z-index: 2;
+  background: inherit;
+}
+
+/***********************************************/
+
+
+/*end of default setting of hexagon part*/
+
+.image-row1{
+
+    width: 68%;
+    height: 200px;
+    position: relative;
+    left: 14%;   
+    display: flex;
+    padding-right: 15px;
+    
+}
+
+.image-row2 {
+    width: 88%;
+    height: 200px;
+    position: relative;
+    display:flex;
+    top:-20px;
+    padding-left: 60px;
+    justify-content: space-between;
+    }
+.image-row3 {
+    width: 68%;
+    height: 200px;
+    position: relative;
+    left: 13%;   
+    display: flex;
+    padding-right: 15px;
+    top:-39px;
+    
+    }
+
+
+
+
+
+/*about starts here*/
+
+#about {
+    width: 100%;
+    height: auto;
+    background-color: #1b91d7;
+    padding-bottom: 30px;
+}
+#about .container {
+    padding-top: 50px;
+
+}
+#about .container .border {
+    border:1px solid #1b91d7 ;
+    border-left: 2px solid #219d84 ;
+    border-right: 2px solid #219d84 ;
+
+}
+.profile-hexagone {
+    background-image: url("../img/aboutme.png");
+  background-size: auto 207.8461px;
+  background-position: center;
+  margin-left: 30px;
+}
+.text {
+    color:white;
+    font-family: "Maven Pro Regular";
+}
+
+
+/*social media of about part starts*/
+
+.social-media {
+    height: 50px;
+}
+.social-media a img {
+    width:35px;
+    margin-left: -3px;
+}
+
+/*Contact starts*/
+
+
+#contact {
+    min-height: 565px;
+    width: 100%;
+    background-color:rgb(50,50,50);
+    padding:50px 0;
+    color:#fff;
+}
+
+#contact .container {
+  min-height: 600px;
+  padding:10px; 
+  overflow-y: hidden;
+}
+#contact .container:before,#contact .container:after{
+    content: "";
+    width:100%;
+    height: 1px;
+    background-color: black;
+    margin-top: -33px;    
+}
+#contact .container:after{
+    margin-top: 140px;
+    margin-bottom: -35px;
+ }   
+.myform input,.myform textarea{
+    background-color: rgb(69,69,69);
+    font-size: 12pt;
+    display: inline-block;
+    width:100%;
+    height: 40px;
+    margin-bottom: 10px;
+    border:1px solid transparent;
+    padding-left: 15px;
+}
+.myform {
+    position: relative;
+}
+.myform textarea {
+    resize:none;
+    width:100%;
+    height: 150px;
+    scroll-behavior: auto;
+}
+
+.submit-btn {
+    width:110px !important;
+    position: absolute;
+    right:0px;
+    margin-bottom: 30px;
+    padding:10px 18px;
+    background-color: #1b91d7 !important;
+
+}
+.submit-btn:hover {
+    background-color:  #0a8ac4 !important;
+}
+
+.form-right-top p{
+    font-size: 16px;
+}
+.form-right-bottom span {
+    display:block;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+.right-span {
+    padding-left: 20px;
+}
+.right-span1 {
+    background:url("../img/location.png") no-repeat left 60%;
+}
+.right-span2 {
+    background:url("../img/call.png") no-repeat left 60%;
+}
+.right-span3 {
+    background:url("../img/message.png") no-repeat left 60%;
+}
+
+
+/*footer starts here*/
+
+
+#footer {
+    width:100%;
+    height: 60px;
+    background-color: rgb(30,30,30);
+    padding:25px 30px;
+    color:white;
+    font-family: calibri light;
+}
+
+
+
+
+
+/*media query starts here*/
+
+
+@media only screen and (max-width: 1252px) {
+.hexagon2, .hexagonteam {
+  width: 150px;
+}
+
+
+}
+@media only screen and (max-width: 992px) {
+
+.hexagon2, .hexagonteam {
+  width: 120px;
+}
+.image-row2 {
+  margin-top: -50px;
+
+}
+.image-row3 {
+  margin-top: -46px;
+}
+.submit-btn {
+}
+.social-media {
+    margin-left: 250px;
+}
+.tiyan h1 {
+    font-size: 33px;
+    border:1px solid red;
+    width: 116%;
+    margin-bottom: 33px;
+}
+} 
+
+
+@media only screen and (max-width: 802px) {
+
+.hexagon2, .hexagonteam {
+  width: 110px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden !important;
+
+  }
+    #slidebar {
+      overflow-x: hidden;
+    }
+  .container  {
+    width: 70% !important;
+  }
+  .hexagon2, .hexagonteam {
+  width: 80px;
+}
+  
+
+    .form-right-top {
+        margin-top: 50px;
+    }
+    .image {
+        margin-left: 30px;
+    
+    }
+    .image-row2 {
+      margin-top: -100px;
+      margin-left: -70px;
+
+    }
+    .image-row3 {
+      margin-top: -100px;
+      justify-content: space-around;
+      margin-left: -50px;
+    }
+    .social-media {
+        margin-left: 15%;
+    }
+  
+     #footer {
+         height: 75px !important;
+         font-size: 15px;
+    }
+    }
+  
+}
+
+
+@media only screen and (max-width: 510px) {
+.navbar {
+  width: 90%;
+}
+
+    .hexagon2, .hexagonteam {
+  width: 60px;
+}
+}
+
+/*imported*/
